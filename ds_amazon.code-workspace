@@ -1,11 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "../../../CONHECIMENTO/nextjs-dashboard"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "ds-magelabs"
+        }
+    ]
 }
