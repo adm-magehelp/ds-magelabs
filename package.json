@@ -9,7 +9,7 @@
     "lint": "eslint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build -o storybook-static",
-    "vercel-build": "next build"
+    "vercel-build": "npm run storybook:build && next build"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.12",
