@@ -2,8 +2,8 @@ import type { StorybookConfig } from "@storybook/nextjs-vite";
 
 const config: StorybookConfig = {
   "stories": [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../stories/**/*.mdx",
+    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
   "addons": [
     "@chromatic-com/storybook",
@@ -15,11 +15,13 @@ const config: StorybookConfig = {
     "name": "@storybook/nextjs-vite",
     "options": {}
   },
-  "storyStoreV7": {
-    title: "Design System Magelabs",
-  },
   "staticDirs": [
     "../public"
   ]
+  // ... outras configurações
+  
+  // A propriedade 'storyStoreV7' FOI REMOVIDA.
+  
+  //
 };
 export default config;
