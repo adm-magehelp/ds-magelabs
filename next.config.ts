@@ -6,13 +6,19 @@ const nextConfig = {
   // Adicione a função rewrites
   async rewrites() {
     return [
-      {
-        source: '/storybook', // O caminho que o usuário acessa
-        destination: '/storybook-static/index.html', // O arquivo HTML principal do Storybook
+    {
+        source: '/storybook', 
+        destination: '/storybook-static/index.html', 
       },
+      // REGRA PARA /storybook/ (barra final)
       {
-        source: '/storybook/:path*', // Captura todos os outros arquivos e assets do Storybook
-        destination: '/storybook-static/:path*', // Mapeia-os para a pasta estática
+        source: '/storybook/', 
+        destination: '/storybook-static/index.html', 
+      },
+      // REGRA PARA ASSETS
+      {
+        source: '/storybook/:path*',
+        destination: '/storybook-static/:path*',
       },
     ];
   },
