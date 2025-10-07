@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  
-  // Função de redirecionamento
+const nextConfig = {
+  // ... outras configurações
+
+  // Adicione a função rewrites
   async rewrites() {
     return [
       {
@@ -14,6 +15,7 @@ const nextConfig: NextConfig = {
         destination: '/storybook-static/:path*', // Mapeia-os para a pasta estática
       },
     ];
+  },
 };
 
 export default nextConfig;
