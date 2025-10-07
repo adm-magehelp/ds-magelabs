@@ -10,7 +10,7 @@ const nextConfig = {
         source: '/storybook', 
         destination: '/storybook-static/index.html', 
       },
-      // REGRA PARA /storybook/ (barra final)
+      // REGRA PARA /storybook/ (barra final
       {
         source: '/storybook/', 
         destination: '/storybook-static/index.html', 
