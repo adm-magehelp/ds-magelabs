@@ -8,17 +8,17 @@ const nextConfig = {
     return [
     {
         source: '/storybook', 
-        destination: 'storybook-static/index.html', 
+        destination: '/storybook-static/index.html', 
       },
       // REGRA PARA /storybook/ (barra final)
       {
         source: '/storybook/', 
-        destination: 'storybook-static/index.html', 
+        destination: '/storybook-static/index.html', 
       },
       // REGRA PARA ASSETS
       {
         source: '/storybook/:path*',
-        destination: 'storybook-static/:path*',
+        destination: '/storybook-static/:path*',
       },
     ];
   },
