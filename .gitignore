@@ -42,3 +42,9 @@ next-env.d.ts
 
 *storybook.log
 storybook-static
+
+# Ignora todas as pastas node_modules no projeto
+node_modules/
+
+# Logs e cache do Turborepo
+.turbo/
